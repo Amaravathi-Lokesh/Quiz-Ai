@@ -72,7 +72,7 @@ if not st.session_state.started:
                 st.session_state.correct.append(a.strip())
 
         st.session_state.started = True
-        st.experimental_rerun()
+        st.rerun()
 
 
 # ---------- QUIZ START ----------
@@ -128,4 +128,4 @@ if st.session_state.started:
 
         if st.button("Restart"):
             st.session_state.clear()
-            st.experimental_rerun()
+            st.rerun()
